@@ -5,7 +5,7 @@ Rules:
 - 'A' is considered to have a number value of 1.
 - 'A' is considered the top card in a face-off. So the order is A > K > Q > J > 10...2
 
-\nVictory:
+Victory:
 - A trail (three cards of the same number) is the highest possible combination.
 - The next highest is a sequence (numbers in order, e.g., 4,5,6. A is considered to have a
 value of 1).
