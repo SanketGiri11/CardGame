@@ -6,18 +6,9 @@ import (
 	"os"
 )
 
-// TeenPati : TeenPati The Game
-// Rules
-// 1. shuffle deck
-// 2. put 1 card from top of deck to table
-// 3. give each player 3 cards
-// 4. start playing from player 1 (clockwise)
-// 5. each player pick one card with the same flag as the card on top of the table, place player card on top of the table
-// 6. if player doesnt have card with the same flag draw card from deck until player get the card with the same flag
-//  6.a. if deck doesnt have any more card, draw card from the top of the table
-// 7. after all player throw card to the table, compare players card, player with highest number win the round
-// 9. continue to play from player who win from last round, player who win last round can choose any card to play first
-// 10. repeat 5-9 until one of players doesnt have any more card
+// shuffle deck
+// give each player 3 cards
+
 type TeenPati struct {
 	Deck    Deck
 	Field   Deck
@@ -51,7 +42,7 @@ func (c *TeenPati) StartGame() {
 
 	// draw card from deck
 	for index := range c.Players {
-		// draw card
+		// draw card and give each player 3 card
 		fmt.Println("\n\n-------Draw-------")
 		c.Players[index].DrawCards(&c.Deck, 3)
 		if c.Players[index].AI == false {

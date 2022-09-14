@@ -15,3 +15,7 @@ value of 1).
 deck until a winner is found.
 - Only the newly drawn cards are compared to decide a tie. The top card wins a tie.
 - For now the suit (spades/hearts etc...), does not matter.
+
+Run:
+- cd main
+- go run cardGame.go
